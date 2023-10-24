@@ -9,7 +9,7 @@ const connectToDatabase = require('./src/mongo');
 connectToDatabase()  
     .then(() => {
         app.listen(PORT, () => {
-            console.log(`WebSocket Server is listening at http://localhost:${ PORT }`);
+            console.log(`WebSocket Server is listening at ${ PORT }`);
         }) 
     })
     .catch(error => {
